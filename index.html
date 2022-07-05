@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dd-mapdata</title>
+    <link rel="icon"
+        href="data:;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href='styles/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <main>
+        <h1>dd-mapdata</h1>
+
+        <div class="places-legend">
+            <select class="places-dropdown">
+                <option value="" selected="selected">Select a place</option>
+            </select>
+            <div class="location-count"><span>Location count: </span><span></span></div>
+            <div class="place-description"><span>Description: </span><span></span></div>
+        </div>
+
+
+        <div class="limiter">
+            <noscript>JavaScript needs to be enabled to create this map.</noscript>
+            <div id='map'>
+                <div class="legend-popdensity">
+                    <span class="legend-popdensity-title">population density (inhabitant per km²)</span>
+                    <div class="legend-popdensity-colors">
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(254, 237, 222) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">&lt; 10</div>
+                        </div>
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(253, 208, 162) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">10</div>
+                        </div>
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(253, 174, 107) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">20</div>
+                        </div>
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(253, 141, 60) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">50</div>
+                        </div>
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(241, 105, 19) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">100</div>
+                        </div>
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(217, 72, 1) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">200</div>
+                        </div>
+                        <div>
+                            <div class="legend-popdensity-color"
+                                style="background: rgb(140, 45, 4) none repeat scroll 0% 0%;"></div>
+                            <div class="legend-popdensity-inhabitants">&gt; 1000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src='src/mapbox-gl.js'></script>
+    <script src="src/index.js" type="module"></script>
+</body>
+
+</html>
